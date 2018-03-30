@@ -35,6 +35,7 @@ def items
   else
     items<< item
   end
+end
   items
 end
 
