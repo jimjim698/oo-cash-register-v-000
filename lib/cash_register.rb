@@ -33,8 +33,15 @@ else
 end
 end
 
-def items(item, price, quant = 1)
-self.add_item.new
+def items
+  @cart.each do |item|
+    item.each do |name, value|
+      complete_list<< :quantity * :item
+    end
+  end
+  complete_list
+end
+
 
 end
 
