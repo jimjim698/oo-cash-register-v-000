@@ -28,15 +28,7 @@ end
 end
 
 def items
-  items= []
-@cart.each do |item|
-  if items.include?(item)
-    false
-  else
-    items<< item
-  end
-end
-  items
+@cart
 end
 
 
