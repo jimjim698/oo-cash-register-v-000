@@ -12,7 +12,11 @@ def initialize(discount = 0)
 end
 
 def add_item(item, price,quant = 1)
-    @cart<< item
+    all_items = {}
+    all_items[:item] = item
+    all_items[:price] = price
+    all_items[:quantity] = quant
+    @cart<< all_items
     price_with_quantity = price * quant
     @total = @total + price_with_quantity
 end
