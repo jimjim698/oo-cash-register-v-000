@@ -34,6 +34,7 @@ end
 end
 
 def items
+  complete_list = []
   @cart.each do |item|
     item.each do |name, value|
       complete_list<< :quantity * :item
