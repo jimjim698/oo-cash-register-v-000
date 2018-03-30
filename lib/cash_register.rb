@@ -36,6 +36,7 @@ end
 
 def void_last_transaction
   @cart.clear
+  @total.clear
   @cart
 end
 
