@@ -40,7 +40,6 @@ def items
     end
   end
   complete_list
-end
 
 
 end
