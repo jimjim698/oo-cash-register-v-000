@@ -12,11 +12,11 @@ def initialize(discount = 0)
 end
 
 def add_item(item, price,quant = 1)
-    all_items = {}
-    all_items[:item] = item
-    all_items[:price] = price
-    all_items[:quantity] = quant
-    @cart<< all_items
+    item_specs = {}
+    item_specs[:item] = item
+    item_specs[:price] = price
+    item_specs[:quantity] = quant
+    @cart<< item_specs
     price_with_quantity = price * quant
     @total = @total + price_with_quantity
 end
@@ -35,9 +35,8 @@ end
 
 def items
   complete_list = []
-  @cart.each do |item|
-    item.each do |name, value|
-      complete_list<< :quantity * :item
+  @cart.each do |item_specs|
+    
     end
   end
   complete_list
