@@ -43,7 +43,6 @@ end
   complete_list
 
 end
-end
 
 def void_last_transaction
   @cart.clear
