@@ -1,6 +1,8 @@
 class CashRegister
 attr_accessor :total, :discount
 
+@@items = []
+
 
 def initialize(discount = 0)
   @total = 0
@@ -28,8 +30,13 @@ end
 end
 
 def items
-@cart
+self.add_item.new
+
 end
 
+def void_last_transaction
+  @cart.clear
+  @cart
+end
 
 end
