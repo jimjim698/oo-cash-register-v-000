@@ -39,9 +39,10 @@ def items
     for qty in 1..item_specs[:quantity]
       complete_list<< item_specs[:item]
   end
+end
   complete_list
 
-
+end
 end
 
 def void_last_transaction
