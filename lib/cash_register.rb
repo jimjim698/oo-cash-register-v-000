@@ -29,7 +29,7 @@ else
 end
 end
 
-def items
+def items(item, price, quant = 1)
 self.add_item.new
 
 end
