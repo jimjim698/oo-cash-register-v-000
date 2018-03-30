@@ -36,7 +36,10 @@ end
 def items
   complete_list = []
   @cart.each do |item_specs|
+    for 1..item_specs[:quantity]
+      complete_list<< item_specs[:item]
   end
+  complete_list
 
 
 end
