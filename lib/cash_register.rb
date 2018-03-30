@@ -36,10 +36,7 @@ end
 def items
   complete_list = []
   @cart.each do |item_specs|
-    
-    end
   end
-  complete_list
 
 
 end
